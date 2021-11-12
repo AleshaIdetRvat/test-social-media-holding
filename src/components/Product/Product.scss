@@ -1,0 +1,172 @@
+.product {
+    padding: 50px 0;
+    @media (max-width: 1279px) {
+        padding: 40px 0;
+    }
+}
+
+.product__body {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    @media (max-width: 1279px) {
+        gap: 40px;
+    }
+}
+
+.product__row {
+    display: grid;
+    grid-template-columns: 650fr 480fr;
+    gap: 50px;
+}
+
+.product__images {
+}
+.product__info {
+    transform: translateY(9px);
+}
+
+//
+.product-info {
+}
+
+.product-info__body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.product-info__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-info__category {
+    font-family: "MetropolisBold";
+    text-transform: uppercase;
+}
+
+.product-info__rating {
+    display: flex;
+    gap: 7px;
+}
+.product-info__stars {
+    transform: translateY(1px);
+}
+
+.product-info__reviews {
+}
+
+.product-info__title {
+    font-family: "MetropolisBold";
+    font-size: 1.65em;
+}
+
+.product-info__subhead-container {
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.product-info__description {
+}
+
+.product-info__description-title {
+    margin-bottom: 6px;
+}
+
+.product-info__items-left {
+    font-family: "MetropolisBold";
+    text-transform: uppercase;
+    padding: 8px 10px 6px 10px;
+    background-color: #e40000;
+    align-self: flex-start;
+    border-radius: 5px;
+    color: var(--white);
+}
+
+.product-info__separator {
+    background-color: #c4c4c4;
+    border: none;
+    height: 1px;
+}
+.product-info__price-block {
+}
+
+.product-info__old-price {
+    position: relative;
+    color: var(--black-light);
+    text-decoration: line-through;
+    text-decoration-color: rgba(0, 0, 0, 0.4);
+}
+
+.product-info__new-price {
+    text-transform: uppercase;
+
+    margin-left: 10px;
+    font-size: 1.65em;
+
+    font-family: "MetropolisBold";
+}
+
+.product-info__select-btn {
+}
+
+.product-info__ship {
+    align-self: center;
+}
+// product overview
+
+.product__overview {
+    max-width: 650px;
+}
+.product__overview-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+.product__overview-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.product__overview-readmore {
+    align-self: flex-start;
+    background-color: transparent;
+    border: none;
+    font-family: "MetropolisBold";
+    color: var(--black-light);
+}
+.product__for {
+}
+.product__is {
+}
+.product__does {
+}
+.product__does-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    color: var(--black-light);
+    > li {
+        position: relative;
+        line-height: 1.222em;
+        padding-left: 16px;
+
+        &::before {
+            position: absolute;
+            top: 6px;
+            left: 2px;
+            display: block;
+            content: "";
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: var(--black-light);
+        }
+    }
+}
+.product__ingredients {
+}
