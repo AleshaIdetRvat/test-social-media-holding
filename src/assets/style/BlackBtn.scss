@@ -1,0 +1,21 @@
+.black-btn {
+    transition: 0.15s;
+    border: none;
+    font-family: "MetropolisBold";
+    font-size: 1em;
+    text-transform: uppercase;
+    color: var(--white);
+    padding: 21px 19px 19px;
+    line-height: 1.22em;
+
+    background-color: var(--black);
+    border-radius: 5px;
+
+    &:hover {
+        opacity: 0.8;
+    }
+    &:active {
+        transform: scale(95%);
+        opacity: 0.8;
+    }
+}

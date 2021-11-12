@@ -1,0 +1,48 @@
+@import "./reset.scss";
+@import "./colors.scss";
+@import "./BlackBtn.scss";
+
+.app {
+    font-family: "MetropolisRegular";
+    // font-family: "MetropolisRegularItalic";
+    // font-family: "MetropolisBold";
+    // font-style: normal;
+    min-height: 100vh;
+    font-size: 18px;
+
+    @media (max-width: 1279px) {
+        font-size: 14px;
+    }
+}
+
+.container {
+    max-width: 1180px;
+    padding: 0 50px;
+    margin: 0 auto;
+    @media (max-width: 1279px) {
+        padding: 0 40px;
+        margin: unset;
+    }
+}
+
+.title {
+    font-family: "MetropolisBold";
+    font-size: 2.6em;
+
+    line-height: 58px;
+
+    @media (max-width: 1024px) {
+        font-size: 2.143em;
+        line-height: 37px;
+    }
+}
+
+.h3-title {
+    font-family: "MetropolisBold";
+    line-height: 1.222em;
+}
+
+.paragraph {
+    line-height: 1.222em;
+    color: var(--black-light);
+}
