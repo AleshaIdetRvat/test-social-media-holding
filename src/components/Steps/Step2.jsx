@@ -1,9 +1,12 @@
 import React from "react"
 import mainImage from "./step_2_image.png"
 import pressHereImage from "./step_2_press_here_arrow.svg"
+import useMedia from "use-media"
 import "./Step.scss"
 
 const Step2 = ({ nextStep }) => {
+    const isMobile = useMedia({ maxWidth: 767 })
+
     return (
         <div className='step-2 step'>
             <div className='step-2__press-here press-here'>
@@ -31,18 +34,32 @@ const Step2 = ({ nextStep }) => {
                             friends that participates in this giveaway!
                         </p>
                     </div>
+                    {isMobile ? (
+                        <div className='step__image step-2__image'>
+                            <img src={mainImage} alt='main image' />
+                        </div>
+                    ) : (
+                        <button
+                            className='step__continue-btn step-2__btn black-btn'
+                            onClick={nextStep}
+                        >
+                            continue
+                        </button>
+                    )}
+                </div>
 
+                {!isMobile ? (
+                    <div className='step__image step-2__image'>
+                        <img src={mainImage} alt='main image' />
+                    </div>
+                ) : (
                     <button
                         className='step__continue-btn step-2__btn black-btn'
                         onClick={nextStep}
                     >
                         continue
                     </button>
-                </div>
-
-                <div className='step__image step-2__image'>
-                    <img src={mainImage} alt='main image' />
-                </div>
+                )}
             </div>
         </div>
     )

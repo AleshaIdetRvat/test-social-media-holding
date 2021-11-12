@@ -17,7 +17,7 @@ const howToItems = [
 ]
 
 const ContainerHowTo = ({ className, ...props }) => {
-    const isMobile = useMedia({ maxWidth: 768 })
+    const isMobile = useMedia({ maxWidth: 767 })
 
     const style = classNames({ "how-to-container": true }, className)
 

@@ -8,6 +8,14 @@
         min-height: 390px;
         height: unset;
     }
+
+    @media (max-width: 767px) {
+        padding: 0;
+        min-height: unset;
+        padding-bottom: 40px;
+
+        justify-content: center;
+    }
 }
 .steps__body {
     height: 100%;
@@ -30,6 +38,12 @@
     @media (max-width: 1024px) {
         gap: 40px;
     }
+
+    @media (max-width: 767px) {
+        gap: 25px;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
 }
 
 .steps__indicator {
@@ -37,6 +51,11 @@
     padding-top: 107px;
     @media (max-width: 1024px) {
         padding-top: 40px;
+    }
+
+    @media (max-width: 767px) {
+        height: min-content;
+        padding-top: 23px;
     }
 }
 

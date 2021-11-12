@@ -29,4 +29,8 @@
     @media (max-width: 1024px) {
         padding: 12px 13px 11px;
     }
+
+    @media (max-width: 767px) {
+        max-height: 37px;
+    }
 }
