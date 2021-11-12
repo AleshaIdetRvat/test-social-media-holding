@@ -10,12 +10,13 @@ const ImagesSlider = ({ images, setSlideIndex }) => {
         },
         dots: false,
         focusOnSelect: true,
-        speed: 200,
+        speed: 300,
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
         vertical: true,
         verticalSwiping: true,
+        easing: "easy",
         nextArrow: (
             <button>
                 <img

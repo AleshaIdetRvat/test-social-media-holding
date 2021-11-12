@@ -48,6 +48,9 @@
 }
 .footer__bottom {
     padding: 20px 0;
+    @media (max-width: 767px) {
+        text-align: center;
+    }
 }
 //Banner
 .banner {
