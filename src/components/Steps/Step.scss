@@ -1,0 +1,66 @@
+//step item
+.step {
+}
+.step__row {
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+.step__content {
+    max-width: 481px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 36px;
+}
+.step__number {
+    color: var(--black-light);
+    line-height: 105%;
+}
+.step__description {
+}
+// step description
+.step-description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.step-description__title {
+    line-height: 105% !important;
+}
+.step-description__text {
+}
+.step-description__list {
+    > li {
+        // &::marker {
+        //     display: block;
+        //     margin-left: 20px;
+        //     content: "1.  ";
+        //     width: 200px;
+        // }
+        line-height: 130%;
+    }
+    margin-left: 30px;
+    list-style: decimal;
+}
+.step__continue-btn {
+    max-width: 380px;
+}
+
+.step__image {
+}
+//step 1
+.step-1 {
+    max-height: 501px;
+}
+// step 2
+.step-2 {
+}
+
+.step-2-description__title {
+    white-space: nowrap;
+}
+.step-2__row {
+    gap: 30px;
+}

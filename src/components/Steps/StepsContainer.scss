@@ -1,0 +1,21 @@
+.steps {
+    padding-left: 17px;
+    height: 709px;
+}
+.steps__body {
+    height: 100%;
+}
+.steps__row {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 130px;
+}
+
+.steps__indicator {
+}
+
+.steps__content {
+}
