@@ -1,0 +1,23 @@
+.how-to-container {
+}
+.how-to-container__body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.how-to-container__title {
+}
+.how-to-container__row {
+    display: flex;
+    gap: 23px;
+    @media (max-width: 1279px) {
+        gap: 13px;
+    }
+}
+.how-to-container__arrow {
+    @media (max-width: 1279px) {
+        width: 14px;
+    }
+    align-self: center;
+    transform: translateY(-10px);
+}
