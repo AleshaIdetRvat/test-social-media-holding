@@ -1,9 +1,19 @@
 .steps {
-    padding-left: 17px;
     height: 709px;
+    // padding: 113px 0 113px 17px;
+
+    @media (max-width: 1024px) {
+        display: flex;
+        padding-left: 17px;
+        min-height: 390px;
+        height: unset;
+    }
 }
 .steps__body {
     height: 100%;
+    @media (max-width: 1024px) {
+        height: unset;
+    }
 }
 .steps__row {
     height: 100%;
@@ -16,11 +26,22 @@
     @media (max-width: 1279px) {
         gap: 100px;
     }
+
+    @media (max-width: 1024px) {
+        gap: 40px;
+    }
 }
 
 .steps__indicator {
+    align-self: flex-start;
+    padding-top: 107px;
+    @media (max-width: 1024px) {
+        padding-top: 40px;
+    }
 }
 
 .steps__content {
+    // height: 100%;
+
     width: 100%;
 }

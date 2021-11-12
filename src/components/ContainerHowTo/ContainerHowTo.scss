@@ -13,11 +13,17 @@
     @media (max-width: 1279px) {
         gap: 13px;
     }
+    @media (max-width: 767px) {
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 275px;
+        align-self: center;
+    }
 }
 .how-to-container__arrow {
+    align-self: center;
+    transform: translateY(-10px);
     @media (max-width: 1279px) {
         width: 14px;
     }
-    align-self: center;
-    transform: translateY(-10px);
 }

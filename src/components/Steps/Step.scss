@@ -15,13 +15,17 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 30px;
+
+    @media (max-width: 1024px) {
+        gap: 10px;
+        flex: 1 1 55%;
+    }
 }
 .step__number {
     color: var(--black-light);
     line-height: 105%;
 }
 .step__description {
-    padding-bottom: 10px;
 }
 
 // step description
@@ -29,6 +33,12 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding-bottom: 10px;
+
+    @media (max-width: 1024px) {
+        gap: 10px;
+        padding-bottom: 0px;
+    }
 }
 .step-description__title {
     line-height: 105% !important;
@@ -48,11 +58,18 @@
 
     gap: 20px;
     white-space: nowrap;
+    @media (max-width: 768px) {
+        padding-top: 10px;
+    }
 }
+
 .step__btns-block,
 .step__continue-btn {
     width: 100%;
     max-width: 380px;
+}
+
+.step__continue-btn {
     @media (max-width: 768px) {
         max-width: 280px;
     }
@@ -66,9 +83,11 @@
         object-fit: contain;
         width: 100%;
         height: 100%;
-        // @media (max-width: 1279px) {
-        //     max-width: 280px;
-        // }
+    }
+
+    @media (max-width: 1024px) {
+        gap: 10px;
+        flex: 1 1 40%;
     }
 }
 
@@ -90,11 +109,19 @@
 .step-2__image {
     opacity: 1;
 }
+.step-2__btn {
+    margin-top: 10px;
+}
 .step-2__press-here {
     position: absolute;
     left: 51%;
     bottom: -65px;
     transform: translate(-50%, 0);
+
+    @media (max-width: 1024px) {
+        left: 56%;
+        bottom: -50px;
+    }
 }
 
 //step 3
@@ -103,6 +130,11 @@
 }
 
 //step 4
+.step-4 {
+    @media (max-width: 1024px) {
+        padding: 23px 0 35px;
+    }
+}
 .step-4__custom-list {
     max-width: 459px;
 }
@@ -110,6 +142,9 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    @media (max-width: 1024px) {
+        gap: 10px;
+    }
 }
 .step-custom-list__item {
     display: flex;
@@ -117,7 +152,6 @@
     gap: 13px;
 }
 .step-custom-list__marker {
-    // flex: 1 1 28px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -125,11 +159,25 @@
     height: 28px;
     border-radius: 50%;
 
+    @media (max-width: 1024px) {
+        font-size: 80%;
+        min-width: 20px;
+        height: 20px;
+        > img {
+            width: 13px;
+        }
+    }
+
     background-color: var(--black);
     color: var(--white);
 }
 .step-4__btns-block {
     flex-direction: column;
+    padding-top: 5px;
+
+    @media (max-width: 1024px) {
+        gap: 15px;
+    }
 }
 .step-4__dont-like-btn {
     font-family: "MetropolisBold";
@@ -140,6 +188,9 @@
 
 // step 5
 .step-5 {
+    @media (max-width: 1024px) {
+        padding: 39px 0 43px;
+    }
 }
 .step-5__row {
     gap: 0px;
@@ -148,6 +199,9 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+    @media (max-width: 1024px) {
+        gap: 10px;
+    }
 }
 .step-5-description__title {
     line-height: 103% !important;
@@ -156,11 +210,18 @@
     display: flex;
     flex-direction: column;
     gap: 56px;
+    @media (max-width: 1024px) {
+        gap: 20px;
+    }
 }
 .step-5-description__text-block {
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    @media (max-width: 1024px) {
+        gap: 10px;
+    }
 
     &:last-child {
         max-width: 380px;
@@ -174,6 +235,8 @@
     font-family: "MetropolisRegularItalic";
     color: var(--black-light);
     font-size: 0.74em;
+
+    width: max-content;
 }
 
 // press here

@@ -1,6 +1,11 @@
 .step-by-step {
     width: 48px;
     height: 490px;
+
+    @media (max-width: 1024px) {
+        width: 23px;
+        height: 306px;
+    }
 }
 .step-by-step__column {
     height: 100%;
@@ -8,6 +13,9 @@
     grid-template-rows: 36px;
     grid-auto-rows: 1fr;
     justify-content: center;
+    @media (max-width: 1024px) {
+        grid-template-rows: 23px;
+    }
 }
 .step-by-step__item {
 }
@@ -48,6 +56,11 @@
     background-color: var(--grey-border);
 
     box-shadow: 0px 0px 0px -3px var(--white), 0px 0px 0px 0px var(--blue);
+
+    @media (max-width: 1024px) {
+        width: 23px;
+        height: 23px;
+    }
 }
 
 .step-by-step__item.step-by-step__item--first {
@@ -68,6 +81,9 @@
 }
 .step-by-step__item--current {
     > .step-by-step__ball {
-        box-shadow: 0px 0px 0px 6px var(--white), 0px 0px 0px 7px var(--blue);
+        @media (max-width: 1024px) {
+            box-shadow: 0px 0px 0px 3px var(--white),
+                0px 0px 0px 4px var(--blue);
+        }
     }
 }

@@ -33,7 +33,7 @@ const Step2 = ({ nextStep }) => {
                     </div>
 
                     <button
-                        className='step__continue-btn black-btn'
+                        className='step__continue-btn step-2__btn black-btn'
                         onClick={nextStep}
                     >
                         continue

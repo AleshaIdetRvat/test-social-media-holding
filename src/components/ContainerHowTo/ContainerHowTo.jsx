@@ -6,6 +6,7 @@ import BuyProductIcon from "./BuyProduct.svg"
 import TestAndShare from "./ChooseProduct.svg"
 import Get from "./Get.svg"
 import arrowIcon from "./arrow.svg"
+import useMedia from "use-media"
 import "./ContainerHowTo.scss"
 
 const howToItems = [
@@ -16,6 +17,8 @@ const howToItems = [
 ]
 
 const ContainerHowTo = ({ className, ...props }) => {
+    const isMobile = useMedia({ maxWidth: 768 })
+
     const style = classNames({ "how-to-container": true }, className)
 
     return (
@@ -33,14 +36,19 @@ const ContainerHowTo = ({ className, ...props }) => {
                         <br />
                         1-2-3
                     </HowToCircle>
-                    {howToItems.map(({ icon, subtitle }) => {
+                    {howToItems.map(({ icon, subtitle }, i) => {
                         return (
                             <>
-                                <img
-                                    className='how-to-container__arrow'
-                                    src={arrowIcon}
-                                    alt='arrow'
-                                />
+                                {isMobile && i % 2 !== 0 ? (
+                                    ""
+                                ) : (
+                                    <img
+                                        className='how-to-container__arrow'
+                                        src={arrowIcon}
+                                        alt='arrow'
+                                    />
+                                )}
+
                                 <HowToCircle subtitle={subtitle}>
                                     <img src={icon} alt={subtitle} />
                                 </HowToCircle>
