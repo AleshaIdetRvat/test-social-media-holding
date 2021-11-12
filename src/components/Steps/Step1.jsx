@@ -13,12 +13,12 @@ const Step1 = ({ nextStep }) => {
                         <h1 className='step-description__title title'>
                             Lorem ipsum dolor sit amet
                         </h1>
-                        <div className='step-description__text paragraph'>
+                        <p className='step-description__text paragraph'>
                             Aliquam urna arcu, scelerisque vel viverra sed,
                             pellentesque sit amet metus. Curabitur at luctus
                             massa. Vestibulum pretium sem tortor, vitae mattis
                             odio accumsan vitae. Fusce id luctus erat:
-                        </div>
+                        </p>
                         <ul className='step-description__list paragraph'>
                             <li>Mauris rutrum interdum condimentum.</li>
                             <li>Donec commodo quis arcu eget pretium.</li>

@@ -63,13 +63,9 @@ const Footer = () => {
 }
 
 const MainPage = () => {
-    const [isStartedSteps, setIsStartedSteps] = React.useState(false)
     const navigate = useNavigate()
 
-    const onSelect = () => {
-        setIsStartedSteps(true)
-        navigate("/step/1")
-    }
+    const onSelect = () => navigate("/step/1")
 
     return (
         <div className='main-page'>
@@ -90,24 +86,6 @@ const MainPage = () => {
                     <ContainerHowTo />
                 </div>
 
-                <Footer />
-            </div>
-        </div>
-    )
-    return (
-        <div className='main-page'>
-            <div className='main-page__container '>
-                <Banner />
-
-                <div className='main-page__content container'>
-                    {isStartedSteps ? (
-                        <StepsContainer />
-                    ) : (
-                        <ProductContainer onSelect={onSelect} />
-                    )}
-
-                    <ContainerHowTo />
-                </div>
                 <Footer />
             </div>
         </div>

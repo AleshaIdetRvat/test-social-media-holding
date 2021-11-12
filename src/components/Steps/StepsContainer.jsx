@@ -8,28 +8,6 @@ import { Step5 } from "./Step5"
 import { StepByStep } from "./StepByStep/StepByStep"
 import "./StepsContainer.scss"
 
-const CurrentStepComponent = ({ currentStep, nextStep }) => {
-    switch (currentStep) {
-        case 1:
-            return <Step1 nextStep={nextStep} />
-
-        case 2:
-            return <Step2 nextStep={nextStep} />
-
-        case 3:
-            return <Step3 nextStep={nextStep} />
-
-        case 4:
-            return <Step4 nextStep={nextStep} />
-
-        case 5:
-            return <Step5 nextStep={nextStep} />
-
-        default:
-            return null
-    }
-}
-
 const StepsContainer = () => {
     const navigate = useNavigate()
 
@@ -46,11 +24,6 @@ const StepsContainer = () => {
                     <StepByStep />
 
                     <div className='steps__content'>
-                        {/* <CurrentStepComponent
-                            currentStep={stepNum}
-                            nextStep={nextStep}
-                        /> */}
-
                         {(() => {
                             switch (Number(stepNum)) {
                                 case 1:
@@ -69,7 +42,7 @@ const StepsContainer = () => {
                                     return <Step5 nextStep={nextStep} />
 
                                 default:
-                                    return null
+                                    return navigate(`/`)
                             }
                         })()}
                     </div>

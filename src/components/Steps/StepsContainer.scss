@@ -12,10 +12,15 @@
     align-items: center;
     justify-content: space-between;
     gap: 130px;
+
+    @media (max-width: 1279px) {
+        gap: 100px;
+    }
 }
 
 .steps__indicator {
 }
 
 .steps__content {
+    width: 100%;
 }

@@ -5,11 +5,17 @@
     font-size: 1em;
     text-transform: uppercase;
     color: var(--white);
-    padding: 21px 19px 19px;
+    padding: 21px 13px 19px;
     line-height: 1.22em;
 
     background-color: var(--black);
     border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
 
     &:hover {
         opacity: 0.8;
@@ -17,5 +23,9 @@
     &:active {
         transform: scale(95%);
         opacity: 0.8;
+    }
+
+    @media (max-width: 1024px) {
+        padding: 12px 13px 11px;
     }
 }

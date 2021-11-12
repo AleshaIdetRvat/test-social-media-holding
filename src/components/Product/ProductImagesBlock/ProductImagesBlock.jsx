@@ -36,13 +36,15 @@ const ImagesSlider = ({ images, setSlideIndex }) => {
 
     return (
         <div className='product-images-block__slider product-images-slider'>
-            <Slider className='product-images-slider__row' {...settings}>
-                {images.map((image) => (
-                    <div className='product-images-slider__item'>
-                        <img src={image} alt='Image' />
-                    </div>
-                ))}
-            </Slider>
+            <div className='product-images-slider__container'>
+                <Slider className='product-images-slider__row' {...settings}>
+                    {images.map((image) => (
+                        <div className='product-images-slider__item'>
+                            <img src={image} alt='Image' />
+                        </div>
+                    ))}
+                </Slider>
+            </div>
         </div>
     )
 }
