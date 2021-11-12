@@ -6,10 +6,13 @@
     border-radius: 5px;
     background-color: var(--white);
     padding: 30px;
-    @media (max-width: 1279px) {
-        height: 400px;
+    @media (max-width: 1229px) {
+        height: 420px;
     }
     @media (max-width: 1024px) {
+        max-height: 350px;
+    }
+    @media (max-width: 850px) {
         max-height: 300px;
     }
 
